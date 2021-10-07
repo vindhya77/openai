@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<div style="text-align: center;margin: 100px;">
+		<form action="{% url 'home' %}" method="POST">
+		{% csrf_token %}
+		<input style="width: 100%;height: 150px;" type="text-area" name="prompt" required=""><br><br>
+		<input type="submit" name="get_code" value="GET CODE">
+	</form>
+	</div>
+</body>
+</html>
